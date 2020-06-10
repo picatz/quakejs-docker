@@ -10,7 +10,6 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 RUN git clone --recurse-submodules https://github.com/begleysm/quakejs.git
 WORKDIR /quakejs
 RUN npm install
-RUN ls
 COPY server.cfg /quakejs/base/baseq3/server.cfg
 COPY server.cfg /quakejs/base/cpma/server.cfg
 # The two following lines are not necessary because we copy assets from include.  Leaving them here for continuity.
