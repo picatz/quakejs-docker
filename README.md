@@ -7,39 +7,13 @@
 ```console
 $ docker pull kentgruber/quakejs:latest
 ...
-$ docker run -d --name quakejs -e SERVER=<SERVER_NAME_OR_IP> -e HTTP_PORT=<HTTP_PORT> -p <HTTP_PORT>:80 -p 27960:27960 kentgruber/quakejs:latest
+$ docker run -d --name quakejs -e PUBLIC_UP=$PUBLIC_UP -p 8080:80 -p 27960:27960 kentgruber/quakejs:latest
 ...
 ```
 
-### Example
-
-```console
-$ docker run -d --name quakejs -e SERVER=10.0.0.2 -e HTTP_PORT=8080 -p 8080:80 -p 27960:27960 kentgruber/quakejs:latest
-...
-```
-
-Send all you friends/coworkers the link: ex. http://10.0.0.2:8080 and start fragging ;)
-
-#### server.cfg
+## `server.cfg`
 
 Refer to [quake3world](https://www.quake3world.com/q3guide/servers.html) for instructions on its usage.
-
-#### docker-compose.yml
-
-```yaml
-version: '2'
-services:
-    quakejs:
-        container_name: quakejs
-        environment:
-            - SERVER=10.0.0.2
-            - HTTP_PORT=8080
-        ports:
-            - '8080:80'
-            - '27960:27960'
-        image: 'kentgruber/quakejs:latest'
-```
-
 
 ## Credits
 
