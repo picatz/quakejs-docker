@@ -8,6 +8,7 @@ sed -i "s/{RCON-PASSWORD}/${rcon_password}/g" /quakejs/base/baseq3/server.cfg
 sed -i "s/{RCON-PASSWORD}/${rcon_password}/g" /quakejs/base/cpma/server.cfg
 
 sed -i "s/quakejs:80/${PUBLIC_IP}:${HTTP_PORT}/g" index.html
+sed -i "s/quakejs:27960/${PUBLIC_IP}:27960/g" index.html
 
 /etc/init.d/apache2 start
 
