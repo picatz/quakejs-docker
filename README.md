@@ -55,4 +55,4 @@ services:
 
 Thanks to [begleysm](https://github.com/begleysm) with his [fork](https://github.com/begleysm/quakejs) of [quakejs](https://github.com/inolen/quakejs).
 
-Thanks to [treyyoder](https://github.com/treyyoder) with his [fork](https://github.com/treyyoder/quakejs-docker) of [quakejs](https://github.com/begleysm/quakejs) aswell as his thorough [documentation](https://steamforge.net/wiki/index.php/How_to_setup_a_local_QuakeJS_server_under_Debian_9_or_Debian_10) which this was derived from.
+Thanks to [treyyoder](https://github.com/treyyoder) with his [fork](https://github.com/treyyoder/quakejs-docker) of [quakejs](https://github.com/begleysm/quakejs) aswell as thorough [documentation](https://steamforge.net/wiki/index.php/How_to_setup_a_local_QuakeJS_server_under_Debian_9_or_Debian_10) which this was derived from.
