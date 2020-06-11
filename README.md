@@ -2,26 +2,16 @@
 
 ![Docker Image CI](https://github.com/treyyoder/quakejs-docker/workflows/Docker%20Image%20CI/badge.svg)
 
-## A fully local and Dockerized quakejs server. Independent, unadulterated, and free from the middleman.
-
-The goal of this project was to create a fully independent quakejs server in Docker that does not require content to be served from the internet.
-Hence, once pulled, this does not need to connect to any external provider, ie. content.quakejs.com. Nor does this server need to be proxied/served/relayed from quakejs.com
-
-### Simply pull the image [kentgruber/quakejs](https://hub.docker.com/r/kentgruber/quakejs)
+## Usage
 
 ```console
 $ docker pull kentgruber/quakejs:latest
 ...
-```
-
-Then run it:
-
-```console
 $ docker run -d --name quakejs -e SERVER=<SERVER_NAME_OR_IP> -e HTTP_PORT=<HTTP_PORT> -p <HTTP_PORT>:80 -p 27960:27960 kentgruber/quakejs:latest
 ...
 ```
 
-#### Example
+### Example
 
 ```console
 $ docker run -d --name quakejs -e SERVER=10.0.0.2 -e HTTP_PORT=8080 -p 8080:80 -p 27960:27960 kentgruber/quakejs:latest
