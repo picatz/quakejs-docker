@@ -7,7 +7,7 @@
 ```console
 $ docker pull kentgruber/quakejs:latest
 ...
-$ docker run -d --name quakejs -e PUBLIC_UP=$PUBLIC_UP -p 8080:80 -p 27960:27960 kentgruber/quakejs:latest
+$ docker run -d --name quakejs -e PUBLIC_IP=$PUBLIC_IP -e HTTP_PORT=$PUBLIC_PORT -p $PUBLIC_PORT:80 -p 27960:27960 kentgruber/quakejs:latest
 ...
 ```
 
